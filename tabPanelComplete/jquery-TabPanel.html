@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- on page load tell the viewport not to scale if the user rotates the view -->
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+<title>jQuery 1 - Basic filters</title>
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<link href="css/screen-layout-large.css" rel="stylesheet" type="text/css" />
+<link href="css/screen-styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body class="page">
+	
+<script language="JavaScript"> 
+
+$("document").ready( function(){
+	$('.tab-panels .tabs li').on('click', function() {
+		//remove the active class for the unordered list
+		$('.tab-panels .tabs li.active').removeClass('active');
+		$(this).addClass('active');
+			//find out which panel to show
+			var panelToShow = $(this).attr('rel');
+			//alert(panelToShow);
+			
+			//hide current
+			$('.tab-panels .panel.active').slideUp(300, function(){
+				//imediately remove the "active" class
+				$(this).removeClass('active');
+				$('#'+panelToShow).slideDown(300, function(){
+				$(this).addClass('active');
+				});
+			});
+			//show new panel
+		});
+	});
+</script>
+<header>
+<p>jQuery - Tab Pannel Widget</p>
+</header>
+<nav>
+	<ul>
+		<li><a href="#">Home</a></li>
+		<li><a href="#">about us</a></li>
+		<li><a href="#">links</a></li>
+		<li><a href="#">FAQ</a></li>
+		<li><a href="#">MAP US</a></li>
+	</ul>				
+</nav>
+
+<div id="primaryContent">
+	<h1>Gallery</h1>
+	<h2>Three Mediums</h2>
+	<div class="tab-panels">
+		<ul class="tabs">
+			<li rel="drawing" class="active">drawing</li>
+			<li rel="water-color">water color</li>
+			<li rel="oil">oil</li>
+		</ul>	
+		
+		<div id="drawing" class="panel active">
+			<img src="images/drawing/thumbs/artwork_1.jpg" />
+			<img src="images/drawing/thumbs/artwork_2.jpg" />
+			<img src="images/drawing/thumbs/artwork_3.jpg" />
+			<img src="images/drawing/thumbs/artwork_4.jpg" />
+			<img src="images/drawing/thumbs/artwork_5.jpg" />
+			<img src="images/drawing/thumbs/artwork_6.jpg" />
+			<img src="images/drawing/thumbs/artwork_7.jpg" />
+			<img src="images/drawing/thumbs/artwork_8.jpg" />
+			<img src="images/drawing/thumbs/artwork_9.jpg" />
+			<img src="images/drawing/thumbs/artwork_10.jpg" />
+		</div>
+			<div id="water-color" class="panel">
+			<img src="images/watercolor/thumbs/artwork_1.jpg" />
+			<img src="images/watercolor/thumbs/artwork_2.jpg" />
+			<img src="images/watercolor/thumbs/artwork_3.jpg" />
+			<img src="images/watercolor/thumbs/artwork_4.jpg" />
+			<img src="images/watercolor/thumbs/artwork_5.jpg" />
+			<img src="images/watercolor/thumbs/artwork_6.jpg" />
+			<img src="images/watercolor/thumbs/artwork_7.jpg" />
+			<img src="images/watercolor/thumbs/artwork_8.jpg" />
+			<img src="images/watercolor/thumbs/artwork_9.jpg" />
+			<img src="images/watercolor/thumbs/artwork_10.jpg" />
+		</div>
+		<div id="oil" class="panel">
+			<img src="images/oil/thumbs/artwork_1.jpg" />
+			<img src="images/oil/thumbs/artwork_2.jpg" />
+			<img src="images/oil/thumbs/artwork_3.jpg" />
+			<img src="images/oil/thumbs/artwork_4.jpg" />
+			<img src="images/oil/thumbs/artwork_5.jpg" />
+			<img src="images/oil/thumbs/artwork_6.jpg" />
+			<img src="images/oil/thumbs/artwork_7.jpg" />
+			<img src="images/oil/thumbs/artwork_8.jpg" />
+		</div>
+	</div>
+	<aside>
+		<h2>Artist Links</h2> 
+		<p>Artist's work that has inspired me become a better illustrator / painter.<br>
+		I find the 16th and 17th centery facinating due to painting the wrong kind of subject could land you in the clutches of the early church's "Holy Inquisition", and be subject to the<a href="http://listverse.com/2013/09/24/10-horrifying-tortures-of-early-christians/"> tools</a> to help change your mind </p>
+		<ul>
+			<li><a href="http://www.metmuseum.org/toah/hd/crvg/hd_crvg.htm" target="_blank">Caravaggio (Michelangelo Merisi) (1571–1610)</a></li>
+			<li><a href="http://www.arthistoryarchive.com/arthistory/baroque/Artemisia-Gentileschi.html" target="_blank">Artemisia Gentileschi</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Frida_Kahlo" target="_blank">Frida Kahlo</a></li>
+			<li><a href="http://www.markryden.com/" target="_blank">Mark Ryden</a></li>
+			<li><a href="http://www.metmuseum.org/toah/hd/verm/hd_verm.htm" target="_blank">Johannes Vermeer</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Jean-Honor%C3%A9_Fragonard" target="_blank">Jean-Honor Fragonard</a></li>
+		</ul>
+	</aside>
+</div><!-- closing primaryContent   -->
+
+<footer>
+	<p class="odd">
+		&copy; Copyright  by jason zeringue
+	</p>
+</footer>
+</body>
+</html>

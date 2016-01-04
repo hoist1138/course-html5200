@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!-- on page load tell the viewport not to scale if the user rotates the view -->
+<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0" />
+<title>Interface Design - Theme 1</title>
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<link href="css/screen-layout-large.css" rel="stylesheet" type="text/css" />
+<link href="css/screen-styles.css" type="text/css" rel="stylesheet" />
+</head>
+<body class="page"> 
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"> </script>
+	
+	<script language="JavaScript"> 
+	//*********** 1
+
+$("document").ready( function(){
+	
+	TweenMax.staggerFrom(".panel", 3, {alpha:0, scale:0, x:"-100", ease:Elastic.easeOut }, .4);
+	TweenMax.staggerFrom(".panel img", 3, {y:"-20px", ease:Elastic.easeOut, delay:.4 }, .1);
+	$(".panel img").on('click', singleImage);
+	
+	function singleImage(evt){
+		
+		TweenMax.staggerTo(".panel", 3, {alpha:0, scale:0, x:"-100", ease:Elastic.easeOut }, .4);
+	};
+	//start with assigning click events on tabs
+	$('.tab-panels .tabs li').on('click', function(){
+		//remove the active class for the unordered list
+		$('.tab-panels .tabs li.active').removeClass('active');
+		//use of the keyword "this" to add "active" class to the current li
+		$(this).addClass('active');
+		
+		var panelToShow = $(this).attr('rel');
+		//alert(panelToShow);
+		
+		//hide current panel
+		$('.tab-panels .panel.active').slideUp();
+		
+	});
+
+});
+</script>
+<header>
+<p>Jason - Tab Pannel Widget</p> 
+</header>
+<nav>
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="/">About us</a></li>
+		<li><a href="/">Gallery</a></li>
+		<li><a href="/">FAQ</a></li>
+		<li><a href="/">MAP US</a></li>
+	</ul>				
+	
+</nav>
+
+<div id="primaryContent">
+	<h1>Main content</h1>
+	<h2>Sub heading of main content</h2>
+	<!--  sliding tabs  -->
+	<div class="tab-panels">
+    	<ul class="tabs">
+        	<li rel="drawing" class="active">drawing </li>
+            <li rel="water-color" >watercolor</li>
+            <li rel="oil">oil</li>
+    	</ul>
+        <div id="drawing" class="panel"> 
+        	<img src="images/drawing/thumbs/artwork_1.jpg" />
+            <img src="images/drawing/thumbs/artwork_2.jpg" />
+            <img src="images/drawing/thumbs/artwork_3.jpg" />
+            <img src="images/drawing/thumbs/artwork_4.jpg" />
+            <img src="images/drawing/thumbs/artwork_5.jpg" />
+            <img src="images/drawing/thumbs/artwork_6.jpg" />
+            <img src="images/drawing/thumbs/artwork_7.jpg" />
+            <img src="images/drawing/thumbs/artwork_8.jpg" />
+            <img src="images/drawing/thumbs/artwork_9.jpg" />
+            <img src="images/drawing/thumbs/artwork_10.jpg" />
+        </div>
+        
+        <div id="water-color" class="panel active"> 
+        	<img src="images/watercolor/thumbs/artwork_1.jpg" />
+            <img src="images/watercolor/thumbs/artwork_2.jpg" />
+            <img src="images/watercolor/thumbs/artwork_3.jpg" />
+            <img src="images/watercolor/thumbs/artwork_4.jpg" />
+            <img src="images/watercolor/thumbs/artwork_5.jpg" />
+            <img src="images/watercolor/thumbs/artwork_6.jpg" />
+            <img src="images/watercolor/thumbs/artwork_7.jpg" />
+            <img src="images/watercolor/thumbs/artwork_8.jpg" />
+            <img src="images/watercolor/thumbs/artwork_9.jpg" />
+            <img src="images/watercolor/thumbs/artwork_10.jpg" />
+        </div>
+        
+        <div id="oil" class="panel"> 
+        	<img src="images/oil/thumbs/artwork_1.jpg" />
+            <img src="images/oil/thumbs/artwork_2.jpg" />
+            <img src="images/oil/thumbs/artwork_4.jpg" />
+            <img src="images/oil/thumbs/artwork_5.jpg" />
+            <img src="images/oil/thumbs/artwork_6.jpg" />
+            <img src="images/oil/thumbs/artwork_7.jpg" />
+            <img src="images/oil/thumbs/artwork_8.jpg" />
+        
+        </div>
+    
+    
+    </div><!--closing tab-panels -->
+
+	<p>this is more main content but in the next paragraph</p>
+	<p>some more paragrapg stuff</p>
+	<p class="notice">older methods of waiting until the page was finished loading</p>
+<p class="notice">slight differences in the dom between browers could make accessing elelments more complex </p>
+<p class="notice">older methods of waiting until the page was finished loading</p>
+<p class="notice">slight differences in the dom between browers could make accessing elelments more complex </p>
+<p class="notice">older methods of waiting until the page was finished loading</p>
+<p class="notice">slight differences in the dom between browers could make accessing elelments more complex </p>
+<aside>
+	<p>this is aside content, it is tangentially related to the page content</p>
+</aside>
+
+<p>
+	this is som e more paragraph content
+	</p>
+</div>
+
+			<footer>
+				<p class="odd">
+					&copy; Copyright  by jason zeringue
+				</p>
+			</footer>
+</body>
+</html>

@@ -1,0 +1,134 @@
+@charset "UTF-8";
+*{
+	margin: 0;
+}
+
+html{
+	background: #A3905A ;
+	
+}
+body {
+	/*color:#592D05; dark brown  
+	color:#A3905A; tan  	
+	color:#D9D5C1; lightest tan
+	color:#BFB999; Light tan  
+	 */
+	/*margin: 30px;*/
+	line-height: 1.5em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:17px;
+	
+}
+
+.page{
+	/*background: #f5f6d4;*/
+	font-family: Arial, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	width:900px; 
+	margin: 0 auto;
+	color:#646554; /*  ALL BASE TEXT COLOR  */
+}
+html  header:first-child {
+	border-radius: 20px;
+	padding: 30px;
+	background: #592D05; url(../images/interfaceImages/banner-background.png);
+}
+header {
+	
+	padding: 30px;
+	background: #734D2C; url(../images/interfaceImages/banner-background.png);
+}
+
+header h1{
+	font-size: 3em;
+	width: 100%;
+	color: #D9D5C1;
+	padding: .5em; 
+}
+header h2 {
+	
+	font-size: 2em;
+	color: #BFB999;
+}
+	
+
+h1, h2, h3{
+	font-size: 1.5em; 
+	color:#52482D; 
+	padding: 1em 1.2em 0 .8em;
+}
+
+#primaryContent p {  
+	padding: 1em 1.2em 0 1em; 
+	line-height: 1.3em; 
+	font-size:1.5em; 
+}
+
+img {   
+	border: 2px solid #7F472E; 
+	padding:0px; margin:5px; 
+	font-size: 1.3em;  
+}
+
+#primaryContent a {  text-decoration:none; margin: .5em 0 0 0; padding: 0px;}
+#primaryContent a:link { color:#2c2e21; padding:5px;   }
+#primaryContent a:visited { color:#2c2e21;   }
+#primaryContent a:hover { color:#7F472E; background-color:#B1BED9;   }
+#primaryContent a:active { color:#2c2e21;   }
+/*override the padding for the links in the aside elements */
+
+.anchor-links{ color:red; } 
+
+
+#primaryContent{margin: 10px 0px 0px 0px; background: #D9D5C1;border-radius: 20px;}
+#primaryContent h2{
+	/*background: #D6DCD6;*/
+
+	/*padding: 1em;*/
+}
+#primaryContent ul{
+	padding: .5em 1.2em 0 3em;
+}
+
+
+
+table {
+	width: 100%;
+	margin: 0;
+	/*padding: 0 30px 0 30px;*/
+	border-spacing: 0; /*  make cells have NO space between them   */
+	font-size: 1.3em;
+	/*color:#52482D;*/
+}
+
+th {
+	background-color: rgba(155,155,150, .5);
+	text-align: left;
+	padding: 10px 30px 10px 30px;
+	font-weight: bolder;
+	font-size: 1.1em;
+	color: #52482D;
+}
+
+td{
+	padding: 10px 30px 10px 30px;;
+	margin: 0;
+	
+}
+tr{
+
+}
+.odd{
+	background-color: rgba(155,155,150, .1);
+}
+hr {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 5px;
+}
+.code{
+	font-family:"Courier New";
+}

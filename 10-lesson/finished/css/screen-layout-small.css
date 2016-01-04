@@ -1,0 +1,116 @@
+	/********  This CSS is only used if display is 50 - 500 pixels*/
+html{
+	background-image:none; /* dont let the use download that huge desktop image! */
+}
+body{background-color: #c0def3;}
+
+p { font-size: .9em; margin: 0 0 .3em 0; padding:10px; line-height: 1.2em }
+
+.page{
+	background-image:none; /*make sure there is no image in the background*/
+	width:100%;/* change to percentage so the page container can react to rotation*/
+}
+header {
+	height: 100%;
+	width: 100%;
+	padding: 0px;
+	/*margin: 0 15px 0 15px;*/
+	/*border-radius: 10px; */
+	background-image: none;
+	background: #150701 url(../images/interfaceImages/banner-background-small.png) no-repeat right	 ;
+}
+h1{
+	font-weight:bolder; 
+
+}
+
+header h1 {
+	font-size: 2em; 
+	font-weight:bolder; 
+	padding:15px 0px 15px 10px;
+	margin: 0px 15px 0px 0px;
+	width: 100%;
+	color:#a7c520; 
+}
+
+h2{
+	display:none;
+}
+
+nav {
+	position: absolute;
+	width: 100%;
+	/*top:0;
+	left:0;*/
+	margin-bottom:-10px; /*bring up the margin from the bottom nav */
+} 
+nav ul{ 
+	margin:0; 
+	padding:0;
+	width: 100%;
+	border-style: none; /* make sure no bording is affecting the box width*/
+}
+
+nav ul li{
+	
+	display:block; /* override the inline-block of the main style sheet */
+	text-align:left; /* left align the links */
+	border-style: none; /* make sure no bording is affecting the box width*/
+}
+
+nav a {
+	display: block; /* block display so the links are unbroken horizontally*/
+	margin: 5px;
+	
+	padding: 9px;
+	font-size: 1.5em; /* larger nav font*/
+	background-color:#F5F6D4; /*lighter background color to improve contrast*/
+}
+
+nav a:hover, nav a:active, nav .active a:link, nav .active a:visited {
+	background-color: #feffe0;
+}
+
+/* make the thumbs image container reactive to rotation */
+.tab-panels{ 
+	width: 100%;
+	margin: 0px;
+}
+/*make sure the thumbnails all fit in the mobile dimensions*/
+.tab-panels img{
+	margin: 0px; 
+	width: 120px;
+	height: 80px;
+}
+
+/*lets get rid of the aside altogether in the mobile version*/
+aside{display:none;}
+
+#flyout img{	
+	display:block;
+	border-style:none;
+	border-radius: 5px;
+	
+}
+#flyout nav{
+	display:none;
+	cursor: pointer;
+	/*background-color:pink;*/
+	
+	padding: 0px 0 0 0;
+	
+}
+
+/* detect pixel ratios for different form factors (devices) */
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (-min-device-pixel-ratio: 2),
+	only screen and (-min-resolution: 192dpi),
+{
+	
+	header{ background: #150701 url(../images/interfaceImages/banner-background-small_2x.png) no-repeat right;}
+	
+}
+

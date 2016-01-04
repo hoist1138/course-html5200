@@ -1,0 +1,97 @@
+/* CSS Document 
+DR Who theme in color.abobe.com
+
+#D96849   warm orange rgb(217,104,73)   
+#607167   med warm gray rgb(96,113,103) 
+#E3A85B   warm peach  rgb(227,168,91)
+#D6D6B6   warm biege  rgb(214,214,182)
+#9C9769    warm brown  rgb(156,151,105)
+#29271B   dark text color
+*/
+ 
+html {
+
+	/* background shorthand notation  */
+	background: #D96849 url(../images/drawing/artwork_15x.jpg) repeat-x scroll -20px 0px;
+	
+/*	background-color: #03080D;
+	background-image: url(../images/drawing/artwork_15.jpg);
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+	background-position:-300px 0px;*/ 
+	
+}
+
+body {
+	font-size: 16px; /* the website font size default is 16 pixels
+	because the body tag is set with font size, all children tags get this size as default, so example 16px is equal to 1 em      */
+	background-color: rgba(214,214,182,.8);
+	width:900px;
+	margin: 0 auto;
+	line-height: 1.5em;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#29271B;
+}
+			
+/* link colors */
+a:link{ color:#D6D6B6;  }
+a:visited{ color:#D6D6B6;  }
+a:hover{ color:#D6D6B6;   }
+a:active{  color:#D6D6B6; }
+
+aside a:link{ color:#29271B; padding:0;  }
+aside a:visited{ color:#29271B; padding:0;  }
+aside a:hover{ color:#29271B; padding:0;   } 
+aside a:active{  color:#29271B; padding:0; } 
+
+/* links that are inside of the primary content div        */
+#primaryContent a:link{ color:#29271B; padding:0 30px;  }
+#primaryContent a:visited{ color:#29271B; padding:0 30px;  }
+#primaryContent a:hover{ color:#29271B; padding:0 30px;   }
+#primaryContent a:active{  color:#29271B; padding:0 30px; }
+
+aside{ float:right; width:300px;  margin-top:45px; background:#D96849; border-radius:30px;    }
+
+h1 { font-size: 2em; font-weight:bold; margin:0;}
+h2 { font-size: 1.5em;  }
+h3 { font-size: 1.3em;  }
+
+p, h1, h2, h3 { padding:0 30px; }
+
+
+header{ 
+
+	background: #D6D6B6;
+	height: 150px;
+	color:#607167;
+}
+
+header h1{  padding:55px 0px 0px 30px;  } 
+
+nav { 
+	text-align: center; 
+	margin:0px;
+	background: #607167;
+}
+
+nav ul{ 
+list-style:none; 
+margin:0;
+padding:0px;
+ }
+
+nav ul li{
+	display:inline-block;
+	padding: 10px;
+	
+}
+nav h2{ display:none;} 
+
+button{ margin: 20px 0px 5px 30px; border-radius:30px;     }
+
+footer{
+	background: #0A1D2E;	
+	color:#B3D7F2;
+	text-align:center;
+}
+

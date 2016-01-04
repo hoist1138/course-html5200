@@ -1,0 +1,18 @@
+
+html{
+	background-image: none; /* dont let the user download that huge desktop image   */
+}
+
+p{
+	font-size: .9em;
+	margin: 0 0 .3em 0;
+	padding: 10px;
+	line-height: 1.2em;
+}
+
+
+header{
+	height: 100%;
+	width: 100%;
+	background: #150701 url(../images/interfaceImages/banner-background-small.png) no-repeat left;
+}

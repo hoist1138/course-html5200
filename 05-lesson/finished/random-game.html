@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Artwork Techniques</title>
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<script type="text/javascript" src="modernizr-latest.js"> </script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"> </script>
+<link href="css/style1.css" rel="stylesheet" type="text/css" />
+<style type="text/css"> 
+#wrapper{
+	width: 800px;
+	height: 400px;	
+}
+#attempt1, #attempt2, #attempt3{
+	width: 200px;
+	height: 100px;
+	padding: 10px;
+	margin: 10px;
+	border: 1px thick;
+	background-color: #a7c520;
+	border-radius: 20px;	
+}
+#attempt1 span, #attempt2 span, #attempt3 span{
+	font-size: 2em;
+	padding-left: 20px;
+}
+
+#total{
+	font-size: 9em;
+	float: right;
+	background-color: #a7c520;
+	padding: 150px 50px 50px 50px;
+	margin: 0 70px 0 0;
+	width: 300px;
+	height: 175px;
+	text-align: center;
+	border-radius: 20px;	
+}
+
+button{
+		padding:30px 20px;
+		margin:10px;
+		width:220px;
+		height: 40px;
+		
+		}
+button.enabled{
+	
+	cursor:pointer;
+}
+button.disabled{
+	background-color: rgba(220, 220, 220, 0.5);
+	color: gray;
+	cursor: default;
+}
+.totalHigh{
+	background: #F5F6D4 url(images/interfaceImages/body-background.png);
+}
+
+
+
+</style>
+</head> 
+<body class="page" id="top">
+	<header>
+	<h1>Randomizer Slot Machine</h1>
+	</header>
+	<nav id="navigation" role="navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">About us</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="random-game.html">random game</a></li>
+			<li><a href="forms.html">html5 Forms</a></li>  
+		</ul>
+		<h2>main navigation</h2> 
+	</nav>
+	<div id="primaryContent">		
+		<article>	
+			<h2> Randomizer Slot Machine: <span id="currentRound">Round: </span> </h2>
+            <button id="go" class="enabled">Click To Try Your Luck!</button>          
+            <div id="wrapper">  
+            	<div id="total" class="nothing"> </div>
+				<div id="attempt1"> 
+                	<p>Attemp Number 1</p>
+                    <span id="attempt1Number"> </span>        
+                </div> 
+                <div id="attempt2"> 
+                	<p>Attemp Number 2</p>
+                    <span id="attempt2Number"> </span>        
+                </div>   
+                 <div id="attempt3"> 
+                	<p>Attemp Number 3</p>
+                    <span id="attempt3Number"> </span>        
+                </div>         
+            
+            
+            </div><!--close wrapper div -->
+            
+		</article>
+		
+	
+
+ 
+	</div> <!-- closing primaryContent   -->
+	<footer>
+		<p>
+		&copy; Copyright  by jason zeringue
+		</p>
+	</footer>
+    <script type="text/javascript" src="javascript/randomNumber.js"> 
+
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

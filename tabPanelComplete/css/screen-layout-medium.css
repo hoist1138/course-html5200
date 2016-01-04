@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+/* layout formatting for displays within 501px - 800px  */
+.page{
+	background: green;
+	width:800px;	
+	margin: 0 auto;
+}
+
+header {
+	height: 120px;
+	background: url( ../images/interfaceImages/banner-medium.jpg);
+}
+
+

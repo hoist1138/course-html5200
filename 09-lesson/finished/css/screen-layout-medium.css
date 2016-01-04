@@ -1,0 +1,180 @@
+@charset "UTF-8";
+/*
+*******  This CSS is only used if display is 501 - 800 pixels
+*/
+body {
+	
+}
+
+.pageHeader { 
+	height: 125px; 
+	background: #6aa1da url(../images/interfaceImages/banner-background-small.png) no-repeat  0px 0px; 
+}							
+
+.page {
+	max-width: 800px;
+	min-width:501px;
+	margin: 0px auto 0px auto;
+	position: relative;	
+	
+}
+
+.pageHeader a.logo {
+	width:115px;
+	height: 70px;
+	top: 20px; right: 20px;
+}
+nav {
+	/*position: absolute;
+	top:125px;*/
+	max-width: 980px;
+	min-width:900px;
+	height:46px;	
+	background-color:#6aa1da;  
+	/*background-color:pink;*/ 
+	
+} 
+nav a{
+	
+}
+nav ul{ 
+width:100%;
+padding:0 0 0 10px;  
+}
+nav ul li{
+	padding:0;
+	margin:0;
+	font-size:.8em;
+}
+nav ul li a {
+	/*margin: 12px 0px 10px 20px;	
+	background-color:#4e93da;
+	display: inline-block;*/	
+	
+	 padding: 10px 25px; 
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;	
+} 
+ nav a:hover, nav a:active, nav .active a:link, nav .active a:visited {
+ 
+	background-color: #83badd;
+	background-image:url(../images/interfaceImages/navBacking.png);
+}
+
+ .primaryContent{
+	margin: 80px 0px 0px 0px;
+}
+
+/************************** Slide show *********************** */
+.javascriptSlideshow{
+	position:relative;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	width:720px;
+	margin:20px 0 20px 10px;
+
+	/*background-color:#83badd;
+	padding: 3% 5%; 
+	margin-top: -2%;
+	height:150%;
+	min-height:150%;*/
+	
+}
+.javascriptSlideshow #placeholder{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	/*background-color: orange;*/
+}
+
+.javascriptSlideshow img{
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	z-index:0;
+}
+
+.javascriptSlideshow p{
+	font-size:1.3em;
+	/*margin:0 10% 0% 2%;*/
+	z-index:2;
+	color:#FFF;
+	/*background-color:pink;
+	position:absolute;*/
+	
+}
+
+.javascriptSlideshow #phonetic{
+	/*background-color:red;*/
+	position:absolute;
+	top:0;
+	left:0;
+	/*width: 90%;
+	margin:-3% 10% 0% 1%;*/
+	z-index:2;
+		
+}
+.javascriptSlideshow #slideshowTitle{
+	
+	/*margin:15px 10px 10px 0px;	*/
+	position:absolute;
+	font-size:3em;
+	/*font-stretch:expanded;*/
+	top:25px;
+	left:0;
+	z-index:5;	
+}
+.javascriptSlideshow #description{
+	
+	/*margin:-8% 10% 0% 4%;
+	position:absolute;*/
+	font-size:1.2em;
+	z-index:5;	
+}
+
+#slideshowLinks{
+	position:absolute;
+	top: 240px;
+	left: 560px;	
+	width: 6.5em;
+	/*margin:2% 0% 5% 0%;*/
+/*	padding:8px;*/
+	font-size:1.4em;
+	/*margin:0 10% 0% 2%;*/
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color:#4e93da;
+	z-index:60;	
+}
+#slideshowLinks p{
+	/*position:absolute;
+	margin:0% 0% 3% 0%;*/
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	background-color:#4e93da;
+	font-size:.8em;
+	padding:.7em;
+	
+}
+#slideshowLinks p a{
+	/*font-size:3px;
+	
+	position:relative	;*/
+
+	
+}
+/************************** -END- Slide show *********************** */
+
+aside{margin: 0; padding:0 0 0 0; clear:both;}
+footer{}
+
+
+
+
+
+
+

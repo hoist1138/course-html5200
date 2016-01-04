@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/* layout for devices within 50px - 500px (MOBILE)  */
+.page{
+	background: pink;
+	width:400px;
+	margin: 0 auto;	
+}
+
+header {
+	height: 80px;
+	background: url( ../images/interfaceImages/banner-small.jpg);
+}
+
+
+

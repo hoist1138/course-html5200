@@ -1,0 +1,100 @@
+
+html{
+	background-image: none; /* dont let the user download that huge desktop image   */
+}
+.page{
+	width: 100%;
+}
+
+p{
+	font-size: .9em;
+	margin: 0 0 .3em 0;
+	padding: 10px;
+	line-height: 1.2em;
+}
+
+
+
+header{
+	height: 100%;
+	width: 100%;
+	padding:0;
+	background: #150701 url(../images/interfaceImages/banner-background-small.png) no-repeat right;
+}
+
+h1{ font-weight: bolder;}/* make it easier to read on small devices */
+
+header h1{ 
+	font-size: 2em;
+	padding: 15px 10px 15px 10px;
+	margin: 0 15px 0 0;
+	/*width: 300px;*/
+
+}
+
+h2 { display:none;}
+
+/***************  NAVIGATION ************/
+
+nav{
+	position: relative;
+	display: none;
+	width: 100%;
+	margin-bottom: 0px; /** */	
+}
+
+nav ul{
+	margin: 0;
+	padding:0;
+	width: 100%;
+	border-style: none; /*** make sure no border is affecting box width */
+}
+nav ul li{
+	display: block; /* override the inline block of the main stylesheet*/
+	text-align: left;
+	border-style: none;	/*** make sure no border is affecting box width */
+}
+
+nav a{
+	display: block;
+	margin: 5px;
+	padding: 9px;
+	font-size: 1.5em; /*** larger text for nav in small view */
+	background-color: #f5f6d4;
+}
+
+/***************  THUMBS   ************/
+
+.tab-panels {
+	width: 100%;
+	margin: 0;
+}
+
+.tab-panels img{
+	margin: 0;
+	width: 120px;
+	height: 80px;
+}
+
+/*****   end thumbs  ***/
+
+aside{
+	display: none;
+}
+
+/*****   detect pixel ratios for different form factors (devices)  ***/
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	   only screen and (min--moz-device-pixel-ratio: 2),
+	   only screen and (-o-min-device-pixel-ratio: 2/1),
+	   only screen and (-min-device-pixel-ratio: 2),
+	   only screen and (-min-resolution: 192dpi),
+{
+	header {
+		background: #150701 url(../images/interfaceImages/banner-background-small_2x.png);
+	}
+	
+}
+
+
+

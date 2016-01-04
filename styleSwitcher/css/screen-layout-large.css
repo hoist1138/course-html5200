@@ -1,0 +1,152 @@
+@charset "UTF-8";
+
+/* layout for large screens 801px - ???   */
+
+body{
+
+	
+}
+
+
+
+a:link    { color: #331C12; }    /* unvisited links */
+a:visited { color: #331C12; }   /* visited links   */
+a:hover   { color: #331C12; } /* user hovers     */
+a:active  { color: #331C12;}   /* active links    */
+html{
+	background: #A7C520 url( ../images/interfaceImages/body-background.png) repeat-x 350px 0px;
+	
+}
+.page{
+	
+	width:900px; 
+	margin: 0 auto;
+}
+h2, a{position:relative;}
+img {   border: 2px solid #7F472E;  }
+
+header {
+	height: 150px;
+	background: #85AB18 url(../images/interfaceImages/banner-background.png);
+}
+header h1 {font-size:2.5em; font-weight:bolder; margin:10px; padding:10px; width: 350px; color:#A7C520; }
+nav{
+	margin-top: 0; 
+	margin-bottom: 15px;
+	background: #85AB18;
+}
+nav ul{
+	width:auto;
+	display:inline-block;
+	overflow: hidden;
+	border-left-width: .1em;
+	border-left-style: solid;
+	list-style:none;
+	text-align:center;	
+}
+nav h2{
+	display:none;	
+}
+#thumbs{margin:10px 30px;}
+.weeklyPromo{
+	float:left;
+	height:100px;
+	width:300px;
+	
+	padding-left: 100px;
+	
+	background-image:url(../images/interfaceImages/sprite-large.png);
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position:0 0;
+	
+	overflow:hidden;
+	margin:10px;
+		
+}
+
+.weeklyPromo img{
+	position:relative;
+	top: -5px;
+	float:right;
+	padding: 0 10px 20px 0;	
+
+}
+.weeklyPromo:hover{
+	/*background-color:yellow;*/
+	
+	background-image:url(../images/interfaceImages/sprite-large.png);
+	background-repeat: no-repeat;
+	background-attachment: local;
+	background-position:0 -100px;
+		
+}
+
+.weeklyPromo a{ display:block; }
+
+div#sideBar{
+	clear:both; 
+}
+
+footer {
+	clear:both;
+}
+/*************************** pannel styles ************/
+
+
+.tab-panels {
+	padding:30px;
+}
+
+
+.tab-panels ul{
+	margin: 0;
+	padding:0;
+}
+
+.tab-panels ul li{
+	list-style-type:none;
+	display:inline-block;
+	background: #D6DCD6;
+	margin:0;
+	padding: 3px 10px;
+	border-radius: 10px 10px 0 0;
+	color:#331C12;
+	font-weight: 200;
+	cursor:default;
+	
+}
+
+.tab-panels .tabs li.active{
+	color: #7F472E;
+	background: #ABB0AB;
+}
+
+.tab-panels ul li:hover {
+	color:fff;
+	background:#F5F6D4;
+}
+/*
+.tab-panels ul li:active{
+	color:#fff;
+	background:#ABB0AB;
+}
+
+.tab-panels .panel{
+	display:none;
+	background:#D6DCD6;
+	padding: 30px;
+	border-radius: 0 0 10px 10px;
+}
+
+.tab-panels .panel.active{
+	display:block;
+}
+*/
+
+
+
+
+
+
+	

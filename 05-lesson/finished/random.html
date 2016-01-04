@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Random Numbers</title>
+
+<link href="css/style1.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript" src="modernizr-latest.js"> </script>
+<script type="text/javascript" src="jquery-1.11.1.js"> </script>
+
+<script type="text/javascript">
+
+$(document).ready( function(){
+	//alert("hello univers");
+
+	if(!Modernizr.input.autofocus)
+	{
+		$("input[autofocus]").focus();//helps older browser with the autofocus
+	}
+
+});
+</script>
+
+</head> 
+<body class="page" id="top"> 
+	<header>
+	<h1>Random Numbers mini game</h1> 
+	</header>
+	<nav id="navigation" role="navigation">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="javascript-concepts.html">JavaScript Concepts</a></li>
+			<li><a href="gallery.html">Gallery</a></li>
+			<li><a href="random.html">Math.random</a></li>
+			<li><a href="forms.html">html5 Forms</a></li>  
+		</ul>
+		<h2>main navigation</h2> 
+	</nav>
+
+	<div id="primaryContent">
+		<article>	
+			<h2>Random Numbers mini game</h2>
+			<button id="go">Click To Try Your Luck!</button>
+			
+			<div id="wrapper">
+				<div id="total" class="">
+					your total
+				</div>
+				
+				<div id="attempt1">
+					<span id="attempt1Number">1</span>
+				</div>
+				<div id="attempt2">
+					<span id="attempt2Number">2</span>
+				</div>
+				<div id="attempt3">
+					<span id="attempt3Number">4</span>
+				</div>
+				
+				
+			</div>
+			
+			
+		</article>
+		<aside>
+			<h2>Artist Links</h2> 
+			<p>Artist's work that has inspired me become a better illustrator / painter.<br>
+			I find the 16th and 17th centery facinating due to painting the wrong kind of subject could land you in the clutches of the early church's "Holy Inquisition", and be subject to the<a href="http://listverse.com/2013/09/24/10-horrifying-tortures-of-early-christians/"> tools</a> to help change your mind </p>
+			<ul>
+				<li><a href="http://www.metmuseum.org/toah/hd/crvg/hd_crvg.htm" target="_blank">Caravaggio (Michelangelo Merisi) (1571–1610)</a></li>
+				<li><a href="http://www.arthistoryarchive.com/arthistory/baroque/Artemisia-Gentileschi.html" target="_blank">Artemisia Gentileschi</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/Frida_Kahlo" target="_blank">Frida Kahlo</a></li>
+				<li><a href="http://www.markryden.com/" target="_blank">Mark Ryden</a></li>
+				<li><a href="http://www.metmuseum.org/toah/hd/verm/hd_verm.htm" target="_blank">Johannes Vermeer</a></li>
+				<li><a href="http://en.wikipedia.org/wiki/Jean-Honor%C3%A9_Fragonard" target="_blank">Jean-Honor Fragonard</a></li>
+			</ul>
+		</aside>
+
+	</div> <!-- closing primaryContent   -->
+	
+	<footer>
+		<p>
+		&copy; Copyright  by jason zeringue
+		</p>
+	</footer>
+	<script type="text/javascript" src="javascript/randomNumber.js"></script>
+</body>
+</html>

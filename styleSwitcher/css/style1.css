@@ -1,0 +1,84 @@
+/* CSS Document 
+DR Who theme in color.abobe.com
+
+#03080D   darkest color, or background     
+#0A1D2E   dark blue   
+#193F57   medium blue  
+#466C8C   light blue  
+#B3D7F2    lightest blue  
+*/
+ 
+html {
+
+	/* background shorthand notation  */
+	background: #0A1D2E url(../images/theme1/body-bg.png) repeat-x scroll -20px 0px; 
+	 
+/*	background-color: #03080D; 
+	background-image: url(../images/drawing/artwork_15.jpg);
+	background-repeat: repeat-x;
+	background-attachment: scroll;
+	background-position:-300px 0px;*/ 
+	
+}
+
+body {
+	font-size: 16px; /* the website font size default is 16 pixels
+	because the body tag is set with font size, all children tags get this size as default, so example 16px is equal to 1 em      */
+	background-color: rgba(70,108,140,.8);
+	width:900px;
+	margin: 0 auto;
+	line-height: 1.5em;
+	font-family:Verdana, Geneva, sans-serif;
+}
+			
+/* link colors */
+a:link{ color:#B3D7F2;  }
+a:visited{ color:#B3D7F2;  }
+a:hover{ color:#466C8C;   }
+a:active{  color:#B3D7F2; }
+
+
+
+h1 { font-size: 2em; font-weight:bold; margin:0;}
+h2 { font-size: 1.5em;  }
+h3 { font-size: 1.3em;  }
+
+p, h1, h2, h3 { padding:0 30px; }
+
+
+header{ 
+	background: #0A1D2E;
+	height: 150px;
+	color:#B3D7F2;
+}
+
+header h1{  padding:55px 0px 0px 30px;  } 
+
+nav { 
+	text-align: center; 
+	margin:0px;
+	background: #193F57;
+}
+
+nav ul{ 
+list-style:none; 
+margin:0;
+padding:0px; 
+ }
+
+nav ul li{
+	display:inline-block;
+	padding: 10px;
+	
+}
+nav h2{ display:none;} 
+
+button{ margin: 20px 0px 5px 30px;     }
+
+footer{
+	background: #0A1D2E;	
+	color:#B3D7F2;
+	text-align:center;
+}
+
+

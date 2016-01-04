@@ -1,0 +1,77 @@
+	/********  This CSS is only used if display is 501 - 800 pixels*/
+html{
+	background-image:none; /* dont let the use download that huge desktop image! */
+}
+body{background-color: #c0def3;}
+
+p { font-size: .9em; margin: 0 0 .3em 0; padding:10px; line-height: 1.2em }
+
+.page{
+	background-image:none; /*make sure there is no image in the background*/
+	width:100%;
+}
+header {
+	height: 130px;
+	width: 100%;
+	background: #331C12 url(../images/interfaceImages/banner-background-small.png) no-repeat center;
+}
+h1{
+	font-weight:bolder; 
+	padding:0px 5px 0px 10px;
+}
+h2{display:none;}
+
+header h1 {
+	font-size: 1.7em; 
+	font-weight:bolder; 
+	padding:15px 5px 15px 10px;
+	margin: 0; 
+	color:#a7c520; 
+}
+
+nav {
+	position:relative;
+	top:0;
+	left:0;
+	margin-bottom:-10px; /*bring up the margin from the bottom nav */
+} 
+nav ul{ 
+	margin:0; 
+	padding:0;
+	width: 100%;
+	border-style: none; /* make sure no bording is affecting the box width*/
+}
+
+nav ul li{
+	display:block; /* override the inline-block of the main style sheet */
+	text-align:left; /* left align the links */
+	border-style: none; /* make sure no bording is affecting the box width*/
+}
+
+nav a {
+	display: block; /* block display so the links are unbroken horizontally*/
+	margin: 5px;
+	
+	padding: 9px;
+	font-size: 1.5em; /* larger nav font*/
+	background-color:#F5F6D4; /*lighter background color to improve contrast*/
+}
+
+nav a:hover, nav a:active, nav .active a:link, nav .active a:visited {
+	background-color: #feffe0;
+}
+
+/* make the thumbs image container reactive to rotation */
+.tab-panels{ 
+	width: 100%;
+	margin: 0px;
+}
+/*make sure the thumbnails all fit in the mobile dimensions*/
+img{
+	margin: 0px; 
+	width: 120px;
+	height: 80px;
+}
+
+/*lets get rid of the aside altogether in the mobile version*/
+aside{display:none;}

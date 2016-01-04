@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+body {
+	/*color:#331C12;  
+	color:#FFEDE5;  	
+	color:#FF8C5B; 
+	color:#7F472E; 
+	color:#193441; */
+	line-height: 1.5em;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size:16px;
+
+	background: #204975 /*url(../images/interfaceImages/bodyGradientB.png) */repeat-x 0px 0px;
+}
+h1 { font-size: 2em; font-weight:normal; margin: -.3em 0 .4em 0; padding:0 30px 0 30px; line-height: 1em; clear:left;}
+h2 { font-size: 1.5em; font-weight:normal; margin: .5em 0 .2em 0; padding:0 30px 0 30px; clear:left;}
+h3 { font-size: 1.3em; font-weight:normal; margin: -.4em 0em .2em 0em; padding:0 30px 0 30px; clear:left;}
+p { margin: 0 0 .9em 0; padding:0 30px; line-height: 1.3em; clear:left; }
+a:link    { color: #331C12;  }    /* unvisited links */
+a:visited { color: #331C12; }   /* visited links   */
+a:hover   { color: #331C12; } /* user hovers     */
+a:active  { color: #331C12;}   /* active links    */
+html{
+	background: #193441 url( ../images/interfaceImages/body-background.png) repeat-x 350px 0px;
+	
+}
+.page{
+	background: #F5F6D4;
+	font-family: Arial, "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	width:900px; 
+	margin: 0 auto;
+}
+h2, a{position:relative;}
+img {   border: 2px solid #7F472E;  }
+
+header {
+	height: 150px;
+	background: #193441 url(../images/interfaceImages/banner-background.png);
+}
+header h1 {font-size:2.5em; font-weight:bolder; margin:10px; padding:10px; width: 350px; color:#A7C520; }
+nav a {	 text-decoration:none;font-weight:bold;font-size: .9em; padding: 5px 22px;
+border-radius: 5px;}
+nav{
+	margin-top: 0; 
+	margin-bottom: 15px;
+	background: #193441;
+}
+nav ul{
+	width:auto;
+	display:inline-block;
+	overflow: hidden;
+	border-left-width: .1em;
+	border-left-style: solid;
+	list-style:none;
+	text-align:center;	
+}
+nav ul li{	
+	display:inline-block;
+	/*float: left;
+	padding: .5em ;*/
+	border-right: .1em solid;
+	border-right-color:#2c2e21;
+	text-decoration:none;}
+.side-links{float:right; }
+.side-links li{
+	font-size:.6em;
+}
+nav h2{
+	display:none;	 
+}
+#primaryContent{
+	background-color:#F5F6D4;
+}
+#primaryContent{margin: 30px 0px 0px 0px;}
+#primaryContent a { /*font-size: .9em;*/ text-decoration:none; margin: .5em 0 0 0;}
+aside{border: solid 1px; margin:30px; width:500px; }
+aside p {padding:0px 30px;} 
+aside div p{padding:0;} 
+aside h3, aside img{padding:0px 10px 0px 30px; margin:0;}
+footer{	background-color:#A7C520; color:#ffffff;  text-align:center; }
+
+button{ margin:5px 5px 5px 30px;}
+
